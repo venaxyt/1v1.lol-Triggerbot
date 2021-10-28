@@ -38,7 +38,7 @@ while True:
         if not rayon_x <= 1 and not rayon_y <= 1 and not rayon_x >= 1919 and not rayon_y >= 1079:
             pixel_color = screen.getpixel((rayon_x, rayon_y))
 
-            if pixel_color[0] >= 140 and pixel_color[1] >= 60 and pixel_color[1] <= 135 and pixel_color[2] >= 70 and pixel_color[2] <= 160:
+            if pixel_color[0] >= 140 and pixel_color[1] >= 60 and pixel_color[1] <= 135 and pixel_color[2] >= 70 and pixel_color[2] <= 160 and not pixel_color[0] == 204 and not pixel_color[0] == 141:  # Not 141 and 204 colors because 141 is the enemy lifebar of construction and 204 is also the construction's lifebar but of the yours
                 pyautogui.click()
 
             rayon_x += 1
