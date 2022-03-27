@@ -63,5 +63,5 @@ def main():
                 rayon_y += 1
 
 if __name__ == "__main__":
-    stater_thread() # starting key checker thread
+    starter_thread() # starting key checker thread
     main() # starting main process
